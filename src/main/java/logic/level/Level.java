@@ -72,4 +72,11 @@ public interface Level {
      * @param level the next level of a level object
      */
     void setNextLevel(Level level);
+
+    /**
+     * Sets the List that contains the bricks in the level
+     *
+     * @param  bricks Brick's List
+     */
+    void setBricks(List<Brick> bricks);
 }

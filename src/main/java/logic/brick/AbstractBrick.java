@@ -4,7 +4,7 @@ public abstract class AbstractBrick implements Brick {
     private int points;
     private int remainingHits;
 
-    public AbstractBrick(int remainingHits, int points) {
+    AbstractBrick(int remainingHits, int points) {
         this.points = points;
         this.remainingHits = remainingHits;
     }
@@ -13,7 +13,7 @@ public abstract class AbstractBrick implements Brick {
         return points;
     }
     public boolean isDestroyed(){
-        return remainingHits > 0;
+        return remainingHits <= 0;
     }
     public int remainingHits(){
         return remainingHits;
